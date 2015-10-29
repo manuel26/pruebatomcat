@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Ejemplo1</title>
+        <script language="javascript">
+            window.onload = function(){
+                var nombre = document.getElementById('nombre');
+                var boton = document.getElementById('aceptar');
+                boton.onclick = function(){
+                    alert("Bienvenido a PAW ..." + nombre.value); //console.log
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Mi primera pagina</h1> <!--Cabecera-->
+        <!--Uso de algunos componentes-->
+        <label>Ingrese Nombre:</label>
+        <input id='nombre' name='txtNombre'>
+        <button id='aceptar' name='btnAceptar'>Aceptar</button>
+    </body>
+</html>

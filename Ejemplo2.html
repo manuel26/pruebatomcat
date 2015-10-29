@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Ejemplo2</title>
+        <script language="javascript">
+            window.onload = function factorial(){
+                //Se captura en variables el id de cada componente
+                var numero = document.getElementById('numero');
+                var boton = document.getElementById('aceptar2');
+                //Se ejecuta el metodo al dar click en el boton
+                boton.onclick = function factorial(){
+                    var n = parseInt(numero.value);
+                    var i, f = 1;
+                    for(i = 1; i <= n; i++)
+                    {
+                        f = f * 1;
+                    }
+                    alert("El factorial es: " + f); //Imprime en ventana
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Calcular Factorial</h1> <!--Cabecera-->
+        <!--Uso de algunos componentes-->
+        <label>Ingrese Numero:</label>
+        <input id='numero' name='txtNumero'>
+        <button id='aceptar2' name='btnAceptar'>Aceptar</button>
+    </body>
+</html>
